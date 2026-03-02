@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import ToDoItem from './ToDoItem';
 
-const ToDoList  = ({ todos, setTodos }) => {
-  
-     const [input, setInput] = useState("");
+const ToDoList = ({
+  todos,
+  setTodos,
+  deleteTodo,
+  toggleComplete,
+  editTodo,
+}) => {
+
+  const [input, setInput] = useState("");
 
   const addTodo = (e) => {
     e.preventDefault();
@@ -15,7 +21,7 @@ const ToDoList  = ({ todos, setTodos }) => {
       completed: false,
     };
 
-    setTodos([...todos, newTodo]);
+    setTodos((prevTodos) => [...prevTodos, newTodo]);
     setInput("");
   };
 
@@ -29,14 +35,22 @@ const ToDoList  = ({ todos, setTodos }) => {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Enter task"
         />
-        <button className="bg-blue-500 text-white px-4">Add</button>
+        <button className="bg-blue-500 text-white px-4">
+          Add
+        </button>
       </form>
 
       {todos.map((todo) => (
-        <ToDoItem key={todo.id} todo={todo} />
+        <ToDoItem
+          key={todo.id}
+          todo={todo}
+          deleteTodo={deleteTodo}
+          toggleComplete={toggleComplete}
+          editTodo={editTodo}
+        />
       ))}
     </div>
   );
-}
+};
 
-export default ToDoList 
+export default ToDoList;

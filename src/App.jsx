@@ -28,13 +28,13 @@ const App = () => {
     <div className="min-h-screen bg-gray-100 flex justify-center items-center">
       <div className="bg-white p-6 rounded shadow w-96">
         <Header />
-        <ToDoList 
-          todos={todos} 
-          setTodos={setTodos}
-          deleteTodo={deleteTodo}
-          toggleComplete={toggleComplete}
-          editTodo={editTodo}
-        />
+       <ToDoList 
+  todos={todos}
+  setTodos={setTodos}
+  deleteTodo={deleteTodo}
+  toggleComplete={toggleComplete}
+  editTodo={editTodo}
+/>
       </div>
     </div>
   );
