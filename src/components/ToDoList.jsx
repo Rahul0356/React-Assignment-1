@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import ToDoItem from './ToDoItem';
+import React, { useState } from "react";
+import ToDoItem from "./ToDoItem";
 
 const ToDoList = ({
   todos,
@@ -8,7 +8,6 @@ const ToDoList = ({
   toggleComplete,
   editTodo,
 }) => {
-
   const [input, setInput] = useState("");
 
   const addTodo = (e) => {
@@ -35,9 +34,7 @@ const ToDoList = ({
           onChange={(e) => setInput(e.target.value)}
           placeholder="Enter task"
         />
-        <button className="bg-blue-500 text-white px-4">
-          Add
-        </button>
+        <button className="bg-blue-500 text-white px-4">Add</button>
       </form>
 
       {todos.map((todo) => (
@@ -49,6 +46,9 @@ const ToDoList = ({
           editTodo={editTodo}
         />
       ))}
+      {todos.length === 0 && (
+        <p className="text-gray-500 text-center">No tasks available</p>
+      )}
     </div>
   );
 };
