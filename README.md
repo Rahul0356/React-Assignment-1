@@ -1,16 +1,65 @@
-# React + Vite
+🚀 Project Setup Instructions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Follow the steps below to run the application locally.
 
-Currently, two official plugins are available:
+1️⃣ Clone the Repository
+git clone https://github.com/Rahul0356/React-Assignment-1.git
+2️⃣ Navigate to Project Folder
+cd React-Assignment-1
+3️⃣ Install Dependencies
+npm install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This will install all required packages listed in package.json.
 
-## React Compiler
+4️⃣ Start the Development Server
+npm start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application will run at:
 
-## Expanding the ESLint configuration
+http://localhost:3000
+📁 Project Structure
+React-Assignment-1/
+│
+├── public/            # Static files
+├── src/               # React source code
+│   ├── components/    # Reusable components
+│   ├── App.js
+│   └── index.js
+│
+├── package.json
+├── README.md
+└── .gitignore
+✅ Assignment Requirements Completed
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✔ Project uploaded to GitHub repository
+
+✔ node_modules removed from repository
+
+✔ Minimum 5 meaningful commits
+
+✔ README includes setup and run instructions
+
+⚠️ Important Notes
+
+The node_modules folder is not included in the repository.
+
+To regenerate it, always run:
+
+npm install
+🛠 Technologies Used
+
+React.js
+
+JavaScript (ES6)
+
+HTML5
+
+CSS3
+
+Node.js & npm
+
+👨‍💻 Author
+
+Rahul Kumar
+
+GitHub: https://github.com/Rahul0356
